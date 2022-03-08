@@ -1,11 +1,11 @@
 # Container insights
 variable "log_analytics_workspace_name" {
-  type    = string
+  type = string
 }
 
 # reference https://azure.microsoft.com/global-infrastructure/services/?products=monitor for log analytics available regions
 variable "log_analytics_workspace_location" {
-  type    = string
+  type = string
 }
 
 # refer https://azure.microsoft.com/pricing/details/monitor/ for log analytics pricing 

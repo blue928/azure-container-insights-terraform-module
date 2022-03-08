@@ -18,9 +18,9 @@ resource "azurerm_log_analytics_workspace" "container_insights" {
 }
 
 resource "azurerm_log_analytics_solution" "container_insights" {
-  solution_name       = "ContainerInsights"
-  location            = azurerm_log_analytics_workspace.container_insights.location
-  resource_group_name = azurerm_log_analytics_workspace.container_insights.resource_group_name
+  solution_name         = "ContainerInsights"
+  location              = azurerm_log_analytics_workspace.container_insights.location
+  resource_group_name   = azurerm_log_analytics_workspace.container_insights.resource_group_name
   workspace_resource_id = azurerm_log_analytics_workspace.container_insights.id
   workspace_name        = azurerm_log_analytics_workspace.container_insights.name
 
